@@ -1,14 +1,18 @@
 {
-  "name": "mina-cli",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "minapp-cli",
+  "version": "1.0.1",
+  "description": "A simple CLI for scaffolding Minapp projects",
+  "main": "mina.js",
   "scripts": {},
   "bin": {
-    "mina": "index.js"
+    "mina": "mina.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "minapp",
+    "cli"
+  ],
+  "author": "chrischan",
+  "repository": "https://github.com/ChrisChan13/mina-cli.git",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.1",
