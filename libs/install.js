@@ -1,3 +1,4 @@
+const os = require('os');
 const ora = require('ora');
 const { spawn } = require('child_process');
 
@@ -5,7 +6,7 @@ module.exports = cwd => new Promise((resolve, reject) => {
   const spinner = ora('npm installing, wait a sec..');
   spinner.start();
 
-  const npm = spawn('npm.cmd', [
+  const npm = spawn(os.type() === 'Windows_NT' ? 'npm.cmd' : 'npm', [
     'install',
     '-D',
     'eslint',
@@ -25,8 +26,12 @@ module.exports = cwd => new Promise((resolve, reject) => {
   });
 
   npm.on('close', (code) => {
-    spinner.text = `successfully installed! ${code === 0 ? '' : `(Exit Code: ${code})`}`;
-    spinner.succeed();
-    resolve();
+    if (code === 0) {
+      spinner.text = 'successfully installed!';
+      spinner.succeed();
+      resolve();
+    } else {
+      reject(code);
+    }
   });
 });
