@@ -10,7 +10,7 @@ const npm = require('./libs/npm');
 const install = require('./libs/install');
 const download = require('./libs/download');
 
-program.version('1.0.1', '-v, --version').usage('[options]');
+program.version('1.0.2', '-v, --version').usage('[options]');
 
 program.command('create <name>')
   .action((name) => {
