@@ -1,0 +1,1 @@
+You can find it [here](https://www.npmjs.com/package/minapp-cli) at NPM.
