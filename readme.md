@@ -19,4 +19,4 @@ mina --version
 ```
 mina --help
 ```
-You can find it [here](https://www.npmjs.com/package/minapp-cli) at NPM.
+You can find it [here](https://www.npmjs.com/package/minapp-cli) on NPM and [here](https://github.com/ChrisChan13/mina-cli) on GitHub.
