@@ -1,4 +1,5 @@
 # mina-cli
+🙊 A simple CLI for scaffolding Minapp projects
 
 ## Get mina-cli on NPM
 ```
