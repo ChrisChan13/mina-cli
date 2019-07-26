@@ -1,6 +1,6 @@
 {
   "name": "minapp-cli",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "A simple CLI for scaffolding Minapp projects",
   "main": "mina.js",
   "scripts": {},
